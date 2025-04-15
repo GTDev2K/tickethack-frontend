@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-    <header>
-      <div class="header" id="logo">
-        <h1 id="logo">Tickethack</h1>
-      </div>
-      <div id="pages-buttons">
-        <input type="button" value="Cart" class="header-buttons" />
-        <input type="button" value="Bookings" class="header-buttons"/>
-      </div>
-    </header>
+      <header>
+        <div class="header" id="logo">
+          <h1 id="logo">Tickethack</h1>
+        </div>
+        <div id="pages-buttons">
+          <input type="button" value="Cart" class="header-buttons input" />
+          <input type="button" value="Bookings" class="header-buttons input" />
+        </div>
+      </header>
       <section id="titles">
-        <h1 class="title">Explore the world effortlessly by train</h1>
+        <h1 class="title">Explore the world effortlessly by train!</h1>
         <h2 class="title">
           Compare, book and enjoy cheap prices for train tickets: your journey
           starts on Tickethack
@@ -26,20 +26,53 @@
       </section>
       <section id="left-section">
         <div class="search-section" id="search-arrival-departure">
-            <input type="text" name="departure" id="search-departure" placeholder="Departure" class="search-input" required>
-            <input type="text" name="departure" id="search-arrival" placeholder="Arrival" class="search-input" required>
+          <input
+            type="text"
+            name="departure"
+            id="search-departure"
+            placeholder="Departure"
+            class="search-input"
+            required
+          />
+          <input
+            type="text"
+            name="departure"
+            id="search-arrival"
+            placeholder="Arrival"
+            class="search-input"
+            required
+          />
         </div>
         <div class="search-section" id="search-calendar">
-            <input type="date" id="date">
+          <input type="date" id="date" />
         </div>
         <div class="search-section" id="search-button">
-            <input type='button' name="search-button" id="search-button" value="Search">
+          <input
+            type="button"
+            name="search-button"
+            id="search-button"
+            value="Search"
+            class="input"
+          />
         </div>
       </section>
       <section id="right-section">
-        <img src="./images/train.png" alt="train-image"/>
-        <p>It's time to book your future trip</p>
+        <img src="./images/train.png" alt="train-image" />
+        <hr />
+        <p>It's time to book your future trip !</p>
+
+        <div class="travel">
+          <div id="trip">
+            <p id="departure-city">Paris</p>
+            <span>></span>
+            <p id="arrival-city">Marseille</p>
+          </div>
+          <p id="time">19h30</p>
+          <p id="price">59€</p>
+          <input type="button" value="Book" class="input" id="book-button">
+        </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
