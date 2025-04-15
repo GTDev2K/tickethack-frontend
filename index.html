@@ -4,29 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <main>
     <header>
       <div class="header" id="logo">
-        <h1 class="logo">Tickethack</h1>
+        <h1 id="logo">Tickethack</h1>
       </div>
-      <div>
-        <input type="button" value="Cart" />
-        <input type="button" value="Bookings" />
+      <div id="pages-buttons">
+        <input type="button" value="Cart" class="header-buttons" />
+        <input type="button" value="Bookings" class="header-buttons"/>
       </div>
     </header>
-    <div class="main-body">
-      <div id="titles">
-        <h1>Explore the world effortlessly by train</h1>
-        <h2>
+      <section id="titles">
+        <h1 class="title">Explore the world effortlessly by train</h1>
+        <h2 class="title">
           Compare, book and enjoy cheap prices for train tickets: your journey
           starts on Tickethack
         </h2>
-      </div>
-      <div id="search-travel"></div>
-      <div id="booked-travel">
-        <img src="" alt="" />
-      </div>
-    </div>
+      </section>
+      <section id="left-section">
+        <div class="search-section" id="search-arrival-departure">
+            <input type="text" name="departure" id="search-departure" placeholder="Departure" class="search-input" required>
+            <input type="text" name="departure" id="search-arrival" placeholder="Arrival" class="search-input" required>
+        </div>
+        <div class="search-section" id="search-calendar">
+            <input type="date" id="date">
+        </div>
+        <div class="search-section" id="search-button">
+            <input type='button' name="search-button" id="search-button" value="Search">
+        </div>
+      </section>
+      <section id="right-section">
+        <img src="./images/train.png" alt="train-image"/>
+        <p>It's time to book your future trip</p>
+      </section>
+    </main>
   </body>
 </html>
