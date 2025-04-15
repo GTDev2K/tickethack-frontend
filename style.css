@@ -1,0 +1,52 @@
+body {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  border: 2px red solid;
+}
+
+main {
+    background-image: ;
+    grid-column-start: 1;
+    grid-column-end: 13 ;
+    grid-row-start: 2;
+    grid-row-end: 13;
+  }
+
+header {
+  border: 1px solid red;
+  width: 100%;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+#titles{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+#search-travel {
+  border: 1px solid red;
+  grid-row-start: 3;
+  grid-row-end: 13;
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+
+#booked-travel {
+  border: 1px solid red;
+  grid-row-start: 3;
+  grid-row-end: 13;
+  grid-column-start: 6;
+  grid-column-end: 13;
+}

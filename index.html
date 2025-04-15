@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
@@ -15,18 +16,30 @@
         <input type="button" value="Bookings" />
       </div>
     </header>
-    <div class="main-body">
-      <div id="titles">
+    <main class="main-body">
+      <section id="titles">
         <h1>Explore the world effortlessly by train</h1>
-        <h2>
+        <h3>
           Compare, book and enjoy cheap prices for train tickets: your journey
           starts on Tickethack
-        </h2>
-      </div>
-      <div id="search-travel"></div>
-      <div id="booked-travel">
-        <img src="" alt="" />
-      </div>
-    </div>
+        </h3>
+      </section>
+      <section id="search-travel">
+        <div id="search-arrival-departure">
+            <input type="text" name="departure" id="search-departure" placeholder="Departure" required>
+            <input type="text" name="departure" id="search-departure" placeholder="Arrival" required>
+        </div>
+        <div id="search-calendar">
+            <input type="date">
+        </div>
+        <div id="search-button">
+            <input type='button' name="search-button" id="search-button" value="Search">
+        </div>
+      </section>
+      <section id="booked-travel">
+        <img src="train.png" alt="train-image" />
+        <p>It's time to book your future trip</p>
+      </section>
+    </main>
   </body>
 </html>
