@@ -1,24 +1,30 @@
 body {
-    margin: 0
+  background-color: white;
+  margin: 0;
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  /* overflow-x: hidden; */
+}
+
+* {
+  box-sizing: border-box;
 }
 
 main {
   display: grid;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   grid-template-rows: repeat(12, 1fr);
   grid-template-columns: repeat(12, 1fr);
-  border: 2px red solid;
-  background-image: url("./images/background.jpg");
-  background-position: top;
-  background-size: cover;
 }
 
 /* HEADER ELEMENTS */
 
 header {
-  background-color: aliceblue;
-  border: 1px solid red;
+  background-color: white;
   width: 100%;
   grid-row-start: 1;
   grid-row-end: 2;
@@ -32,10 +38,21 @@ header {
 #logo {
   color: #4fa890;
   margin-left: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#pages-buttons{
-    margin-right: 20px;
+#pages-buttons {
+  margin-right: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  border: none;
+}
+
+.header-buttons {
+  border-radius: 10px;
+  border: none;
+  margin-right: 40px;
+  background-color: transparent;
 }
 
 /* MAIN TITLES */
@@ -43,70 +60,138 @@ header {
 #titles {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   color: white;
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 13;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
 }
 
 .title {
   text-align: center;
 }
 
-/* LEFT SECTION */
+h2 {
+  font-weight: 100;
+}
+
+/* --------------------------------------------------LEFT SECTION */
 
 #left-section {
   display: flex;
   flex-direction: column;
   background-color: white;
-  border: 1px solid red;
   grid-row-start: 3;
   grid-row-end: 13;
   grid-column-start: 1;
   grid-column-end: 7;
   text-align: center;
-  border-radius: 5%;
-  height: 80%;
-  width: 60%;
+  border-radius: 10px;
+  height: 300px;
+  max-height: 300px;
+  width: 300px;
   max-width: 300px;
   margin: auto;
   justify-content: space-around;
+  border: grey 0.3px solid;
 }
 
-#search-input{
-    background-color: #f1f4f3;
-    
+.search-section {
+  margin-top: 10px;
+}
 
+.search-input {
+  background-color: #f1f4f3;
+  width: 90%;
+  height: 30px;
+  /* outline: none; */
+  border: none;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+.search-input:focus {
+  border: 2px solid rgb(115, 0, 255);
+  outline: none;
+}
+
+#search-departure {
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 #search-button {
-    background-color: #4fa890;
-    color: white;
-  }
+  background-color: #4fa890;
+  color: white;
+  width: 40vh;
+  border: none;
+  margin: auto;
+  border-radius: 10px;
+  height: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
 
-/* RIGHT SECTION */
+/* -------------------------------------------------- RIGHT SECTION */
 
 #right-section {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   background-color: aliceblue;
   grid-row-start: 3;
   grid-row-end: 13;
   grid-column-start: 7;
   grid-column-end: 13;
   text-align: center;
-  border-radius: 5%;
-  height: 80%;
-  width: 60%;
-  max-width: 300px;
+  border-radius: 10px;
+  height: 300px;
+  max-height: 300px;
+  width: 400px;
+  max-width: 450px;
   margin: auto;
   justify-content: space-around;
+  border: grey 0.3px solid;
+  overflow-y: scroll;
+}
+
+.travel {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: auto;
+  /* padding: 5px 50px; */
+  width: 90%;
+  align-items: center;
+}
+
+#div-trip {
+  display: flex;
 }
 
 #right-section img {
-    width: 120px;
-    margin: auto;
+  width: 120px;
+  margin: auto;
+}
+
+hr {
+  width: 70%;
+}
+
+#right-section p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+#book-button{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  border-radius: 15px;
+  margin-right: 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border : 1px solid #4fa890;
+  color: white;
+  background-color: #4fa890;
 }
