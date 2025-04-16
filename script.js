@@ -19,10 +19,11 @@ document.querySelector('#search-button').addEventListener('click', function () {
 
 				document.querySelector('#right-section').innerHTML += `
 		<div class="travel">
-				<p id="depart">${data.trips[i].departure} > </p>
-				<p id="arrivee">${data.trips[i].arrival}</p>
-                <p id="price">${data.trips[i].price} €</p>
+				<p id="departure-city">${data.trips[i].departure} > </p>
+				<p id="arrival-city">${data.trips[i].arrival}</p>
+            
                 <p id="time>${new Date( data.trips[i].date).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}</p>
+                <p id="price">${data.trips[i].price} €</p>
 
 
 				</div>
