@@ -13,61 +13,34 @@
           <h1 id="logo">Tickethack</h1>
         </div>
         <div id="pages-buttons">
-          <input type="button" value="Cart" class="header-buttons input" />
-          <input type="button" value="Bookings" class="header-buttons input" />
+          <input type="button" value="Cart" class="header-buttons" href="/cart.html" />
+          <input type="button" value="Bookings" class="header-buttons" />
         </div>
       </header>
+      <!-- TITLES SECTION -->
       <section id="titles">
         <h1 class="title">Explore the world effortlessly by train!</h1>
-        <h2 class="title">
-          Compare, book and enjoy cheap prices for train tickets: your journey
-          starts on Tickethack
-        </h2>
+        <h2 class="title">Compare, book and enjoy cheap prices for train tickets: your journey starts on Tickethack</h2>
       </section>
+      <!-- LEFT SECTION - TRIP RESEARCH -->
       <section id="left-section">
         <div class="search-section" id="search-arrival-departure">
-          <input
-            type="text"
-            name="departure"
-            id="search-departure"
-            placeholder="Departure"
-            class="search-input"
-            required
-          />
-          <input
-            type="text"
-            name="departure"
-            id="search-arrival"
-            placeholder="Arrival"
-            class="search-input"
-            required
-          />
+          <input type="text" name="departure" id="search-departure" placeholder="Departure" class="search-input" required />
+          <input type="text" name="departure" id="search-arrival" placeholder="Arrival" class="search-input" required />
         </div>
         <div class="search-section" id="search-calendar">
           <input type="date" id="date" />
         </div>
         <div class="search-section" id="search-button">
-          <input
-            type="button"
-            name="search-button"
-            id="search-button"
-            value="Search"
-            class="input"
-          />
+          <input type="button" name="search-button" id="search-button" value="Search" />
         </div>
       </section>
+      <!-- RIGHT SECTION - TRIP DISPLAYING -->
       <section id="right-section">
-        <img src="./images/train.png" alt="train-image" />
-        <hr />
-        <p>It's time to book your future trip !</p>
-
-        <div class="travel">
-            <p id="departure-city">Paris</p>
-            <span>></span>
-            <p id="arrival-city">Marseille</p>
-            <p id="time">19h30</p>
-            <p id="price">59€</p>
-          <input type="button" value="Book" class="input" id="book-button">
+        <div id="default-display">
+          <img src="./images/train.png" alt="train-image" />
+          <hr />
+          <p>It's time to book your future trip !</p>
         </div>
       </section>
     </main>
